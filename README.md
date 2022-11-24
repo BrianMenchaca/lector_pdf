@@ -4,7 +4,7 @@ Para correr el programa debes seguir las siguientes instrucciones en la terminal
 
 ## WSL
 
-1- Debemos tener instalado WSL
+1- Debemos tener instalado WSL.
 2- Ejecutar los siguiente comandos:
 ```sh
 sudo apt-get update
