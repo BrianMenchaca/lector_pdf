@@ -2,9 +2,10 @@
 
 Para correr el programa debes seguir las siguientes instrucciones en la terminal:
 
-## WSL
+### WSL
 
 1- Debemos tener instalado WSL.
+
 2- Ejecutar los siguiente comandos:
 ```sh
 sudo apt-get update
@@ -14,12 +15,12 @@ sudo apt-get upgrade
 ```sh
 sudo apt install poppler-utils
 ```
-4- Verificar que esta instalado correctamente:
+4- Verificar que Poppler esta instalado correctamente:
 ```sh
 pdftocairo -v
 ```
 
-## Crear y activar ambiente virtual
+### Crear y activar ambiente virtual
 
 Dentro de la carpeta donde se clonará el programa
 
@@ -30,13 +31,13 @@ python3 -m venv env
 source env/bin/activate
 ```
 
-## Instalar los modulos necesarios para el programa
+### Instalar los modulos necesarios para el programa
 
 ```sh
 pip3 install -r requirements.txt
 ```
 
-## Instrucciones de uso
+### Instrucciones de uso
 
 Primero debemos colocar el pdf en el que queremos aplicar el OCR en la carpeta pdf.
 
