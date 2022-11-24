@@ -7,7 +7,7 @@ Para correr el programa debes seguir las siguientes instrucciones en la terminal
 Dentro de la carpeta donde se clonará el programa
 
 ```sh
-git clone
+git clone https://github.com/BrianMenchaca/lector_pdf.git
 python3 -m venv env
 source env/bin/activate
 pip3 install -r requirements.txt
