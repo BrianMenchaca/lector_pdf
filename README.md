@@ -2,23 +2,6 @@
 
 Para correr el programa debes seguir las siguientes instrucciones en la terminal:
 
-## Crear y activar ambiente virtual
-
-Dentro de la carpeta donde se clonará el programa
-
-```sh
-git clone https://github.com/BrianMenchaca/lector_pdf.git
-python3 -m venv env
-source env/bin/activate
-pip3 install -r requirements.txt
-```
-
-## Instalar los modulos necesarios para el programa
-
-```sh
-pip3 install -r requirements.txt
-```
-
 ## WSL
 
 1- Debemos tener instalado WSL
@@ -34,6 +17,23 @@ sudo apt install poppler-utils
 4- Verificar que esta instalado correctamente:
 ```sh
 pdftocairo -v
+```
+
+## Crear y activar ambiente virtual
+
+Dentro de la carpeta donde se clonará el programa
+
+```sh
+git clone https://github.com/BrianMenchaca/lector_pdf.git
+cd lector_pdf
+python3 -m venv env
+source env/bin/activate
+```
+
+## Instalar los modulos necesarios para el programa
+
+```sh
+pip3 install -r requirements.txt
 ```
 
 ## Instrucciones de uso
