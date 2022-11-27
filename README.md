@@ -2,48 +2,104 @@
 
 Para correr el programa debes seguir las siguientes instrucciones en la terminal:
 
-### WSL
+## Instalación:
 
-1- Debemos tener instalado WSL.
+### Linux
 
-2- Ejecutar los siguiente comandos:
+1- Ejecutar los siguiente comandos para actualizar los indices:
 ```sh
 sudo apt-get update
 sudo apt-get upgrade
 ```
-3- Instalar Poppler
+2- Instalar Poppler
 ```sh
 sudo apt install poppler-utils
 ```
-4- Verificar que Poppler esta instalado correctamente:
+3- Verificar que Poppler esta instalado correctamente:
 ```sh
 pdftocairo -v
 ```
 
-### Crear y activar ambiente virtual
+#### Crear y activar ambiente virtual (Linux)
 
 Dentro de la carpeta donde se clonará el programa
 
 ```sh
 git clone https://github.com/BrianMenchaca/lector_pdf.git
 cd lector_pdf
-python3 -m venv env
+python -m venv env
 source env/bin/activate
+```
+
+### Windows
+
+#### Instalación Tesseract
+
+Descargar el instalador de Tesseract desde el siguiente enlace, elegir la opción de 32 o 64 bit según la versión de tu Windows:
+
+[Enlace de página](https://github.com/UB-Mannheim/tesseract/wiki)
+
+Iniciar el instalador y dar siguiente hasta que nos muestre:
+
+![]https://miro.medium.com/max/640/1*9G5-tYLWNFZCXAv0oy5-RA.png
+Aca marcamos la opción "Math / equation..." y los idiomas que se usarán para la lectura del pdf.
+
+![]https://miro.medium.com/max/640/1*ZzSChHIIgvamts0qrlC1BA.png
+En ese punto debemos escoger el directorio donde se instalará el programa. La ruta se usará mas adelante.
+
+Damos siguiente y finalizar.
+
+Una vez finalizado, debemos añadir una linea de codigo debajo de import:
+
+```sh
+pytesseract.pytesseract.tesseract_cmd = r'<path>'
+```
+Reemplazar <path> por la ruta donde instalamos tesseract, añadiendo al final de la ruta **tesseract**.
+Ejemplo:
+
+```sh
+pytesseract.pytesseract.tesseract_cmd = r'C:\Users\nombre-usuario\AppData\Local\Tesseract-OCR\tesseract'
+```
+
+#### Añadiendo otros idiomas
+
+En caso de que necesitemos añadir otros idiomas, además de los que añadimos al momento de instalar, podemos ir a la pagina:
+
+[Página para descargar idiomas](https://tesseract-ocr.github.io/tessdoc/Data-Files.html)
+
+Descargamos los idiomas que necesitemos, los copiamos y los pegamos en la ruta siguiente ruta:
+
+"<ruta de la carpeta Tesseract>\tessdata"
+
+#### Crear y activar ambiente virtual (Windows)
+
+Dentro de la carpeta donde se clonará el programa
+
+```sh
+git clone https://github.com/BrianMenchaca/lector_pdf.git
+cd lector_pdf
+python -m venv env
+.\env\Scripts\activate
 ```
 
 ### Instalar los modulos necesarios para el programa
 
 ```sh
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
 
-### Instrucciones de uso
+## Instrucciones de uso
 
-Primero debemos colocar el pdf en el que queremos aplicar el OCR en la carpeta pdf.
+Crear carpetas img y pdf:
+```sh
+mkdir img pdf
+```
+
+Colocar el pdf que queremos aplicar el OCR en la carpeta pdf.
 
 Después ejecutar el programa con el siguiente comando:
 ```sh
-python3 lector_pdf.py
+python lector_pdf.py
 ```
 
 El programa nos listara los archivos dentro de la carpeta pdf.
