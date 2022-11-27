@@ -42,9 +42,11 @@ Descargar el instalador de Tesseract desde el siguiente enlace, elegir la opció
 Iniciar el instalador y dar siguiente hasta que nos muestre:
 
 ![](https://miro.medium.com/max/640/1*9G5-tYLWNFZCXAv0oy5-RA.png)
+
 Aca marcamos la opción "Math / equation..." y los idiomas que se usarán para la lectura del pdf dentro de la casilla "Adittional language data (download)".
 
 ![](https://miro.medium.com/max/640/1*ZzSChHIIgvamts0qrlC1BA.png)
+
 En ese punto debemos escoger el directorio donde se instalará el programa. La ruta se usará mas adelante.
 
 Damos siguiente y finalizar.
