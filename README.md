@@ -49,7 +49,7 @@ En ese punto debemos escoger el directorio donde se instalará el programa. La r
 
 Damos siguiente y finalizar.
 
-Una vez finalizado, debemos añadir una linea de codigo debajo de import:
+Una vez finalizado, debemos añadir una linea de codigo debajo del import de los modulos:
 
 ```sh
 pytesseract.pytesseract.tesseract_cmd = r'<path>'
