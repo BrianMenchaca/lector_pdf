@@ -1,10 +1,14 @@
 # Lector de PDF
 
-Para correr el programa debes seguir las siguientes instrucciones en la terminal:
+**Tabla de contenidos**
 
-## Instalación:
+[TOC]
+
+## Instalación
 
 ### Linux
+
+#### Comandos
 
 1- Ejecutar los siguiente comandos para actualizar los indices:
 ```sh
