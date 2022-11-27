@@ -1,9 +1,5 @@
 # Lector de PDF
 
-**Tabla de contenidos**
-
-[TOCM]
-
 ## Instalación
 
 ### Linux
