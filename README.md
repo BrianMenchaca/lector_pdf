@@ -41,10 +41,10 @@ Descargar el instalador de Tesseract desde el siguiente enlace, elegir la opció
 
 Iniciar el instalador y dar siguiente hasta que nos muestre:
 
-![]https://miro.medium.com/max/640/1*9G5-tYLWNFZCXAv0oy5-RA.png
-Aca marcamos la opción "Math / equation..." y los idiomas que se usarán para la lectura del pdf.
+![](https://miro.medium.com/max/640/1*9G5-tYLWNFZCXAv0oy5-RA.png)
+Aca marcamos la opción "Math / equation..." y los idiomas que se usarán para la lectura del pdf dentro de la casilla "Adittional language data (download)".
 
-![]https://miro.medium.com/max/640/1*ZzSChHIIgvamts0qrlC1BA.png
+![](https://miro.medium.com/max/640/1*ZzSChHIIgvamts0qrlC1BA.png)
 En ese punto debemos escoger el directorio donde se instalará el programa. La ruta se usará mas adelante.
 
 Damos siguiente y finalizar.
@@ -67,9 +67,7 @@ En caso de que necesitemos añadir otros idiomas, además de los que añadimos a
 
 [Página para descargar idiomas](https://tesseract-ocr.github.io/tessdoc/Data-Files.html)
 
-Descargamos los idiomas que necesitemos, los copiamos y los pegamos en la ruta siguiente ruta:
-
-"<ruta de la carpeta Tesseract>\tessdata"
+Descargamos los idiomas que necesitemos, los copiamos y los pegamos en la carpeta **tessdata**, que se encuentra dentro de la carpeta donde se instalo tesseract.
 
 #### Crear y activar ambiente virtual (Windows)
 
