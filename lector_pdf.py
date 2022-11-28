@@ -17,7 +17,11 @@ def main():
             i += 1
             pdfs.append(fichero)
 
-    select = int(input("Opcion: "))
+    while True:
+        select = int(input("Opcion: "))
+        if select >= 0 and select < i:
+            break
+    
     cpdf.convertir_pdf(pdfs[select])
 
     dir_img = "./img/" + pdfs[select][:-4]
@@ -43,7 +47,11 @@ def obtener_lenguajes():
     for language in pytesseract.get_languages():
         print(str(i) + ": " + language)
         i += 1
-    option = int(input("Opcion: "))
+
+    while True:
+        option = int(input("Opcion: "))
+        if option >= 0 and option < i:
+            break
     return pytesseract.get_languages()[option]
 
 
