@@ -17,4 +17,4 @@ def convertir_pdf(filename):
 
 
 if __name__ == "__main__":
-    convertir_pdf("./instruccion.pdf")
+    convertir_pdf("./factura.pdf")
