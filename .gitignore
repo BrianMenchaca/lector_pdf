@@ -5,6 +5,7 @@
 *.jpg
 *.pdf
 *.png
+*.txt
 
 ### Linux ###
 *~
