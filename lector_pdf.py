@@ -3,6 +3,7 @@ import os
 import convertir_pdf_a_jpg as cpdf
 from PIL import Image
 
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract'
 
 def main():
     dir = './pdf'
